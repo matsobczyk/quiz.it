@@ -1,0 +1,17 @@
+.bgstyle{
+    background-color: #F3F1E0;
+    height: 93vh;
+    margin: 0px;
+}
+.navstyle{
+    height: 7vh;
+    background-color: #FFDDA5;
+}
+.textstyle{
+    color: #707070;
+}
+
+.containerStyle{
+    background-color: #9FBBAF;
+    height: 50vh;
+}
