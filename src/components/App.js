@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import "../styles.css";
 import { useState } from "react";
-import QuizEntrance from "./core/views/quizEntrance";
-import Login from "./core/views/login";
-import Register from "./core/views/register";
+import QuizEntrance from "./core/quizEntrance";
+import Login from "./auth/login";
+import Register from "./auth/register";
 
 const App = () => {
   const showContainer = useState(true);
