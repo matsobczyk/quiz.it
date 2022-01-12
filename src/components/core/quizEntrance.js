@@ -1,30 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
 
 //TODO()
-const loginCommand = (name, password) => {
-  axios
-    .get("http://en.wikipeda.org/w/api.php", {
-      params: {
-        action: "query",
-        list: "search",
-        format: "json",
-        origin: "*",
-        search: term,
-      },
-    })
-    .then((result) => {});
+const enterQuizCommand = (code, name, index) => {
+  // axios
+  //   .get("http://en.wikipeda.org/w/api.php", {
+  //     params: {
+  //       action: "query",
+  //       list: "search",
+  //       format: "json",
+  //       origin: "*",
+  //       search: term,
+  //     },
+  //   })
+  //   .then((result) => {});
 };
 
-const Login = () => {
+const QuizEntrance = () => {
   return (
     <div>
       <div className="row">
         <div className="text-center col-md-3 containerStyle position-absolute top-50 start-50 translate-middle">
-          <h4 className="textstyle">login</h4>
+          <h4 className="textstyle">enter quiz</h4>
           <br />
           <h2 style={{ fontSize: "37px" }} className="textstyle">
-            hello teacher!
+            hello user!
           </h2>
 
           <form>
@@ -33,25 +33,23 @@ const Login = () => {
                 <input
                   className="inputStyle m-3 text-center"
                   type="text"
-                  placeholder="login"
+                  placeholder="entrance code"
                 />
               </div>
               <div className="row-lg-6">
                 <input
                   className="inputStyle m-3 text-center"
                   type="text"
-                  placeholder="password"
+                  placeholder="name"
                 />
               </div>
-              <Link
-                component={Link}
-                to="/"
-                className="ms-4 nav-link textstyle m-2"
-                style={{ textDecoration: "none" }}
-              >
-                dont have account?
-                <br /> create it here
-              </Link>
+              <div className="row-lg-6">
+                <input
+                  className="inputStyle m-3 text-center"
+                  type="text"
+                  placeholder="index"
+                />
+              </div>
               <div className="row-lg-6">
                 <button className="submitButtonStyle mt-5 text-center">
                   Submit
@@ -65,4 +63,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default QuizEntrance;
