@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+//import axios from "axios";
 
 //TODO()
-const loginCommand = (name, password) => {
-  // axios
-  //   .get("http://en.wikipeda.org/w/api.php", {
-  //     params: {
-  //       action: "query",
-  //       list: "search",
-  //       format: "json",
-  //       origin: "*",
-  //       search: term,
-  //     },
-  //   })
-  //   .then((result) => {});
-};
+//const loginCommand = (name, password) => {
+// axios
+//   .get("http://en.wikipeda.org/w/api.php", {
+//     params: {
+//       action: "query",
+//       list: "search",
+//       format: "json",
+//       origin: "*",
+//       search: term,
+//     },
+//   })
+//   .then((result) => {});
+//};
 
 const Login = () => {
   return (
@@ -46,7 +46,7 @@ const Login = () => {
               </div>
               <Link
                 component={Link}
-                to="/"
+                to="/register"
                 className="ms-4 nav-link textstyle m-2"
                 style={{ textDecoration: "none" }}
               >

@@ -1,20 +1,20 @@
 import React from "react";
-import axios from "axios";
+//import axios from "axios";
 
 //TODO()
-const registerCommand = (name, password, repeatedPassword) => {
-  // axios
-  //   .get("http://en.wikipeda.org/w/api.php", {
-  //     params: {
-  //       action: "query",
-  //       list: "search",
-  //       format: "json",
-  //       origin: "*",
-  //       search: term,
-  //     },
-  //   })
-  //   .then((result) => {});
-};
+//const registerCommand = (name, password, repeatedPassword) => {
+// axios
+//   .get("http://en.wikipeda.org/w/api.php", {
+//     params: {
+//       action: "query",
+//       list: "search",
+//       format: "json",
+//       origin: "*",
+//       search: term,
+//     },
+//   })
+//   .then((result) => {});
+//};
 
 const Register = () => {
   return (
