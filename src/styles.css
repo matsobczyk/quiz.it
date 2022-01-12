@@ -1,17 +1,47 @@
-.bgstyle{
-    background-color: #F3F1E0;
-    height: 93vh;
-    margin: 0px;
+body {
+  font-family: "Menlo";
 }
-.navstyle{
-    height: 7vh;
-    background-color: #FFDDA5;
+.bgstyle {
+  background-color: #f3f1e0;
+  height: 93vh;
+  margin: 0px;
 }
-.textstyle{
-    color: #707070;
+.navstyle {
+  height: 7vh;
+  background-color: #ffdda5;
+}
+.textstyle {
+  color: #707070;
+  font-size: 20px;
 }
 
-.containerStyle{
-    background-color: #9FBBAF;
-    height: 50vh;
+.containerStyle {
+  background-color: #9fbbaf;
+  height: 60vh;
+  border-radius: 2rem;
+}
+
+.inputStyle {
+  border-radius: 50px;
+  background-color: #f3f1e0;
+  width: 40vh;
+  border: 1px solid #ffdda5;
+  height: 7vh;
+}
+
+.buttonStyle {
+  border-radius: 50px;
+  background-color: #f3f1e0;
+  border: 3px solid #9fbbaf;
+  height: 5vh;
+  width: 18vh;
+}
+
+.submitButtonStyle {
+  border-radius: 50px;
+  background-color: #f3f1e0;
+  border: 3px solid #9fbbaf;
+  height: 7vh;
+  width: 23vh;
+  transform: translateY(40px);
 }

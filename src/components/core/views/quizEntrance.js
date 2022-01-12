@@ -1,12 +1,21 @@
 import React from "react";
 
-export default function Container({ show }) {
-  if (!show) {
-    return <div></div>;
-  }
+//TODO()
+const enterQuizCommand = (code, name, index) => {
+  axios
+    .get("http://en.wikipeda.org/w/api.php", {
+      params: {
+        action: "query",
+        list: "search",
+        format: "json",
+        origin: "*",
+        search: term,
+      },
+    })
+    .then((result) => {});
+};
 
-  //monospace
-
+const QuizEntrance = () => {
   return (
     <div>
       <div className="row">
@@ -51,4 +60,6 @@ export default function Container({ show }) {
       </div>
     </div>
   );
-}
+};
+
+export default QuizEntrance;
