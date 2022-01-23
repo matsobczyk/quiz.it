@@ -1,39 +1,35 @@
 import { React, useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import EntranceButton from '../common/EntranceButton';
 import SubmitButton from '../common/SubmitButton';
 import Header from '../common/Header';
 import AuthLink from './AuthLink';
 
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  // TODO()
-  // const loginCommand = () => {
-  // axios
-  //   .get("http://en.wikipeda.org/w/api.php", {
-  //     params: {
-  //       action: "query",
-  //       list: "search",
-  //       format: "json",
-  //       origin: "*",
-  //       search: term,
-  //     },
-  //   })
-  //   .then((result) => {});
-  // };
   const navigate = useNavigate();
+
+  function loginCommand() {
+    axios
+      .post('http://localhost:3001/auth/loginTeacher', {
+        email,
+        password,
+      })
+      .then((result) => {
+        if (result.data) {
+          localStorage.setItem('auth', result.data);
+          navigate('/panel');
+        }
+        return false;
+      });
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
-    let validate = false;
-
-    console.log(`data: ${email} ${password}`);
-    // if(loginCommand())
-    validate = true;
-    if (validate) {
-      navigate('/panel');
-    }
+    loginCommand();
   }
 
   return (
