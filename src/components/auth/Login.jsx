@@ -1,6 +1,5 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
-import { Link } from 'react-router-dom';
 // import axios from "axios";
 
 // TODO()
@@ -18,49 +17,23 @@ import { Link } from 'react-router-dom';
 //   .then((result) => {});
 // };
 
+import EntranceButton from '../common/EntranceButton';
+import SubmitButton from '../common/SubmitButton';
+import Header from '../common/Header';
+import AuthLink from './AuthLink';
+
 function Login() {
   return (
     <div>
       <div className="row">
         <div className="text-center col-md-3 containerStyle position-absolute top-50 start-50 translate-middle">
-          <h4 className="textstyle">login</h4>
-          <br />
-          <h2 style={{ fontSize: '37px' }} className="textstyle">
-            hello teacher!
-          </h2>
-
+          <Header title="hello teacher!" header="login" />
           <form>
-            <div className="col">
-              <div className="row-lg-6">
-                <input
-                  className="inputStyle m-3 text-center"
-                  type="text"
-                  placeholder="login"
-                />
-              </div>
-              <div className="row-lg-6">
-                <input
-                  className="inputStyle m-3 text-center"
-                  type="text"
-                  placeholder="password"
-                />
-              </div>
-              <Link
-                component={Link}
-                to="/register"
-                className="ms-4 nav-link textstyle m-2"
-                style={{ textDecoration: 'none' }}
-              >
-                dont have account?
-                <br />
-                {' '}
-                create it here
-              </Link>
-              <div className="row-lg-6">
-                <button className="submitButtonStyle mt-5 text-center">
-                  Submit
-                </button>
-              </div>
+            <div className="container">
+              <EntranceButton name="login" />
+              <EntranceButton name="password" />
+              <AuthLink linkTo="/register" lineOne="don't have account?" lineTwo="create it" accent="here" />
+              <SubmitButton />
             </div>
           </form>
         </div>
