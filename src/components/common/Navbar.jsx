@@ -1,13 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-const Navbar = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Navbar() {
   return (
     <div>
       <nav className="navstyle navbar navbar-expand-md navbar-light">
         <div className="container-fluid">
           <div className="navbar-brand">
-            <Link component={Link} to="/" style={{ textDecoration: "none" }}>
-              <h2 className="ms-4 nav-link" style={{ color: "black" }}>
+            <Link component={Link} to="/" style={{ textDecoration: 'none' }}>
+              <h2 className="ms-4 nav-link" style={{ color: '#707070' }}>
                 quiz.it
               </h2>
             </Link>
@@ -39,5 +40,5 @@ const Navbar = () => {
       </nav>
     </div>
   );
-};
+}
 export default Navbar;

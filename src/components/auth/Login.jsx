@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-//import axios from "axios";
+/* eslint-disable react/button-has-type */
+import React from 'react';
+import { Link } from 'react-router-dom';
+// import axios from "axios";
 
-//TODO()
-//const loginCommand = (name, password) => {
+// TODO()
+// const loginCommand = (name, password) => {
 // axios
 //   .get("http://en.wikipeda.org/w/api.php", {
 //     params: {
@@ -15,16 +16,16 @@ import { Link } from "react-router-dom";
 //     },
 //   })
 //   .then((result) => {});
-//};
+// };
 
-const Login = () => {
+function Login() {
   return (
     <div>
       <div className="row">
         <div className="text-center col-md-3 containerStyle position-absolute top-50 start-50 translate-middle">
           <h4 className="textstyle">login</h4>
           <br />
-          <h2 style={{ fontSize: "37px" }} className="textstyle">
+          <h2 style={{ fontSize: '37px' }} className="textstyle">
             hello teacher!
           </h2>
 
@@ -48,10 +49,12 @@ const Login = () => {
                 component={Link}
                 to="/register"
                 className="ms-4 nav-link textstyle m-2"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: 'none' }}
               >
                 dont have account?
-                <br /> create it here
+                <br />
+                {' '}
+                create it here
               </Link>
               <div className="row-lg-6">
                 <button className="submitButtonStyle mt-5 text-center">
@@ -64,6 +67,6 @@ const Login = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Login;
