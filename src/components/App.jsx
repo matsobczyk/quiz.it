@@ -8,6 +8,7 @@ import Login from './auth/Login';
 import Register from './auth/Register';
 import 'survey-react/modern.min.css';
 import MySurvey from './common/Survey';
+import TeacherPanel from './core/TeacherPanel';
 
 function App() {
   const showContainer = useState(true);
@@ -22,6 +23,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/survey" element={<MySurvey />} />
+            <Route path="/panel" element={<TeacherPanel />} />
           </Routes>
         </div>
       </Router>
