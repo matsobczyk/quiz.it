@@ -1,3 +1,8 @@
+# Autorzy
+lp | imię | nazwisko
+:-------------------------:|:-------------------------:|:-------------------------:
+|1|Filip|Szczepański|
+|2|Mateusz|Sobczyk|
 # Getting Started quiz.it app
 
 ## How to start this project
@@ -44,7 +49,6 @@ Entrance Page           |  Survey start       |  Survey end
 # Wybrane ciekawsze elementy techniczne
 numer          |  opis       |  zdjęcie
 :-------------------------:|:-------------------------:|:-------------------------:
-|---|---|---|
 |1 | Router - w projekcie wykorzystaliśmy reactowy router pozwalający na wygodną obsługę endpointów | <img width="561" alt="Screenshot 2022-01-25 at 00 52 10" src="https://user-images.githubusercontent.com/61236846/150884620-8077d1a0-50e1-40b9-9c40-ce5299ae778b.png">|
 |2| UseNavigate |<img width="600" alt="Screenshot 2022-01-25 at 00 51 39" src="https://user-images.githubusercontent.com/61236846/150884568-72602ec4-b186-4519-97f4-994eb6697551.png">|
 |3 | Wykorzystaliśmy bootstrapowy navbar w połączeniu z Reactowym routerem | <img width="599" alt="Screenshot 2022-01-25 at 00 52 41" src="https://user-images.githubusercontent.com/61236846/150884661-9fc8fa07-6448-4be3-8a7c-8d0b98718a43.png">|
