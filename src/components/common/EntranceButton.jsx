@@ -9,6 +9,8 @@ function EntranceButton(props) {
         className="inputStyle m-4 text-center"
         type="text"
         placeholder={props.name}
+        value={props.value}
+        onChange={(e) => props.onChangeValue(e.target.value)}
       />
     </div>
   );

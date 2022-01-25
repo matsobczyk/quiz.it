@@ -18,5 +18,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+    'no-multiple-empty-lines': ['error', { max: 3, maxEOF: 0 }],
   },
 };
