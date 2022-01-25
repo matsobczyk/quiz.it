@@ -25,6 +25,12 @@ body {
   height: 60vh;
   border-radius: 2rem;
 }
+.surveyContainerInfoStyle {
+  background-color: #9fbbaf;
+  height: 5vh;
+  width: 25%;
+  border-radius: 2rem;
+}
 .surveyContainerStyle::-webkit-scrollbar {
   display: none;
 }
